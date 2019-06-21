@@ -28,7 +28,7 @@ let versions = (node, npm) => `
 </html>
 `
 
-exports.handler = async function http(req) {
+exports.handler = async function http() {
   let node = exec('node --version')
   let npm = exec('npm --version')
   let body = versions(node, npm)
